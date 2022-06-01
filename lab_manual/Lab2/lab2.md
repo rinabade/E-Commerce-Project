@@ -72,6 +72,10 @@
 
 # OUTPUT: 
 
-![image of category model] 
+![image of product model](https://github.com/rinabade/E-Commerce-Project/blob/master/lab_manual/Lab2/284382751_723579082221058_2103099558406711841_n.png) 
+
+![image of category model](https://github.com/rinabade/E-Commerce-Project/blob/master/lab_manual/Lab2/284837814_490152009532384_7957260564952937221_n.png)
+
+![image of view product](https://github.com/rinabade/E-Commerce-Project/blob/master/lab_manual/Lab2/285010121_1991098547747591_8730209762865238535_n.png)
 
 # CONCLUSION:
