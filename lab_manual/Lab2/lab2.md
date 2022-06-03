@@ -17,7 +17,7 @@ The basics:
 
 # PROCEDURES:
 1) In models.py, create a model for brands
-
+        
         code:
             class Brand(models.Model):
                 name = models.CharField(max_length=200)

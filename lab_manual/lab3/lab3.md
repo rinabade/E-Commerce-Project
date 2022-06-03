@@ -1,6 +1,6 @@
 # LAB 3
 
-# OBJECTIVES: 
+# OBJECTIVES:
 
     1) To implement the search operations in the modules.
 
@@ -10,9 +10,9 @@
 
 In application search works like a regular search engine. Users type in their query, and then can view their search result.
 
-# PROCEDURES:
+# PROCEDURES: 
 
-1) In 'admin.py' implement the following code
+1) In 'admin.py', implement the following code
 
         code:
             class ProductAdmin(admin.ModelAdmin):
