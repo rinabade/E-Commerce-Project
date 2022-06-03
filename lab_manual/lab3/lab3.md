@@ -78,11 +78,11 @@ In application search works like a regular search engine. Users type in their qu
 
 # OUTPUT:
 
-![image of product model]
+![image of category model](https://github.com/rinabade/E-Commerce-Project/blob/master/lab_manual/lab3/284886846_748961786299210_3614428421292495007_n.png)
 
-![image of product model]
+![image of brand model](https://github.com/rinabade/E-Commerce-Project/blob/master/lab_manual/lab3/285241964_724755432096606_5374873704334466299_n.png)
 
-![image of product model]
+![image of product model](https://github.com/rinabade/E-Commerce-Project/blob/master/lab_manual/lab3/285371250_957316448317111_290086021054951634_n.png)
 
 
 # CONCLUSION:
