@@ -238,7 +238,7 @@ The syntax of the Django template language involves four constructs.
 
 
 # OUTPUT :
-![image of product model](https://github.com/rinabade/E-Commerce-Project/blob/master/lab_manual/lab4/Screenshot%20(19).png) 
+![image of product model](https://github.com/rinabade/E-Commerce-Project/blob/master/lab_manual/lab4/Screenshot%20(21).png) 
 
 
 # CONCLUSION :
