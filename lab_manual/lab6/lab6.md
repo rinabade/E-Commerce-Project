@@ -159,7 +159,7 @@ A shopping cart is an essential part of a retailer's online store that streamlin
 7) Run the server and check the result.
 
 # OUTOUT :
-![image of cartitem]()
+![image of cart item](https://github.com/rinabade/E-Commerce-Project/blob/master/lab_manual/lab6/Screenshot%20(22).png)
 
 
 # CONCLUSION :
