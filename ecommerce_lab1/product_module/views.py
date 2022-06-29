@@ -102,13 +102,12 @@ def cart(request):
     product_id = request.GET.get("id")
     quantity = request.GET.get("qty")
 
-    if product_id:
+    if product_id and quantity:
         # retrieve product data
         product = Product.objects.get(id=product_id)
         try:
             # get cart item and increase quantity
-            cart_item = CartItem.objects.get(user=request.user,
-            product=product)
+            cart_item = CartItem.objects.get(user=request.user, product=product)
             cart_item.quantity += int(quantity)
             cart_item.entered_on = datetime.now()
         except CartItem.DoesNotExist:
@@ -122,20 +121,20 @@ def cart(request):
             # save to database
             cart_item.save()
 
-        # retrieve the cart items for the user from db
-        cart_items = CartItem.objects.filter(user=request.user)
+    # retrieve the cart items for the user from db
+    cart_items = CartItem.objects.filter(user=request.user)
 
-        # calculate total
-        total = 0
-        for item in cart_items:
-            total += item.product.price * item.quantity
+    # calculate total
+    total = 0
+    for item in cart_items:
+        total += item.product.price * item.quantity
 
-        # return view
-        context = {
-            'cart_items': cart_items,
-            'total': total,
-        }
-        return render(request, "cart.html", context)
+    # return view
+    context = {
+        'cart_items': cart_items,
+        'total': total,
+    }
+    return render(request, "cart.html", context)
 
 def removecart(request, id):
     try:
@@ -148,3 +147,13 @@ def removecart(request, id):
 
     # redirect to cart
     return redirect(cart)
+
+def success_page(request):
+    message = request.session["message"]
+    return render(request, "success.html", {"message": message})
+
+def error_page(request):
+    message = request.session["message"]
+    return render(request, "error.html", {"message": message})
+
+

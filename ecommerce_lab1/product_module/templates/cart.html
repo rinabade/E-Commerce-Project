@@ -3,17 +3,34 @@
 {% block header %} Your Cart {% endblock %}
 {% block content %}
     {% if cart_items %}
+    <div class="container product_section_container">
+        <div class="row">
+            <div class="col product_section clearfix">
+            <!-- Breadcrumbs -->
+            
+            <div class="breadcrumbs d-flex flex-row align-items-center">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Women's</a></li>
+               </ul>
+            </div>  
+            </div>
+            </div>
+            </div>
     <div class="row">
         <h4 class="col-sm-12 col-md-12 col-lg-12">
 
-            <span class="text-muted"><i class="fa fa-shopping-cart" aria-
-    hidden="true"></i> Your cart</span>
+            <span class="text-muted"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Your cart</span>
 
              <span class="badge badge-secondary badge-pill">{{cart_items|length}}</span>
 
          </h4>
     </div>
+  
+        
 
+    
     <table class="table table-striped">
         <thead>
         <tr>
@@ -25,6 +42,7 @@
         </tr>
     </thead>
 <tbody>
+
     {% for item in cart_items %}
     <tr>
         <td><img height="50" width="50" src="{{item.product.image_url }}" /></td>
@@ -60,6 +78,7 @@
     </tr>
     </tbody>
     </table>
+    
 
     {% else %}
         <h2>No product added to cart.</h2>

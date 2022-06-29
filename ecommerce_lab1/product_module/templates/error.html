@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Fail{% endblock %}
+
+{% block header %}
+
+    <h2>Payment Failed</h2>
+
+{% endblock %}
+
+{% block content %}
+<div class="container product_section_container">
+    <div class="row">
+        <div class="col product_section clearfix">
+        <!-- Breadcrumbs -->
+        
+        <div class="breadcrumbs d-flex flex-row align-items-center">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Women's</a></li>
+           </ul>
+        </div>  
+        </div>
+        </div>
+        </div>
+    <h3 class="text-danger">{{ message }}</h3>
+    <p>Please check your token or amount then retry. If issue still exist, contact your admin!</p>
+    <p>
+        <a class="btn btn-info" href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> View cart and retry payment</a>
+    </p>
+    <br><br>   <br><br>   <br><br>   
+{% endblock %}
