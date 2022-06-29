@@ -50,9 +50,9 @@ Payment Gateway is an online payment processing technology which helps businesse
 
 
 # OUTPUT :
-![image of payment_module]()
+![image of payment_module](https://github.com/rinabade/E-Commerce-Project/blob/master/lab_manual/lab7/Screenshot%20(24).png)
 
-![image of token generation]()
+![image of token generation](https://github.com/rinabade/E-Commerce-Project/blob/master/lab_manual/lab7/Screenshot%20(25).png)
 
 
 # CONCLUSION :
